@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 15px;
+    font-weight: 400;
+	vertical-align: baseline;
+    font-family: Roboto;
+}
+
+:root{
+    --text: #0F1419;
+    --icon-text: #536471;
+    --border:  #DADDDF;
+}
+
+.post{
+    width: 591px;
+    display: flex;
+    border: 1px solid var(--border);
+    padding: 17px;
+    box-sizing: border-box;
+}
+
+.content-post{
+    width: 430px;
+}
+
+.title-post{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.interations{
+    display: flex;
+    align-items: space;
+    justify-content: space-between;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img-post{
+    margin-right: 12px;
+}
+
+h1{
+    margin-right: 3px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+h2{
+    margin-left: 5px;
+    margin-right: 0px;
+    color: var(--icon-text)
+}
+
+.title-post span{
+    color: var(--icon-text)
+}
+
+.dot{
+    background-color:  var(--icon-text);
+    width: 3px;
+    height: 3px;
+    border-radius: 10px;
+    margin: 0px 5px 1px 5px;
+    
+}
+
+p{
+    margin-bottom: 25px;
+    color: var(--text);
+}
+
+p + p {
+    margin-bottom: 15px;
+}
+
+.box-interations img{
+    margin-right: 15px;
+}
+
+.box-interations:hover{
+    text-shadow: 0px 0px 0px  var(--text);
+    cursor: pointer;
+    
+}
+
+.box-interations span{
+    vertical-align: text-top;
+    color:var(--icon-text);
+    font-size: 13px;
+
+
+}
+
+
+/* Desktops 2500px*/
+@media(max-width: 2500px){
+   
+}
+
+/* Notebooks 1240px*/
+@media(max-width: 1240px){
+
+}
+
+/* Tablets 1024px*/
+@media(max-width: 1024px){
+    .post{
+        width: 100%;
+        margin: 0px 100px;
+    }
+
+    .content-post{
+        width: 85%;
+    }
+    
+    .box-interations img{
+        margin-right: 3px;
+    }
+    
+}
+
+/* Mobile 400px*/
+@media(max-width: 400px){
+    .post{
+        width: 100%;
+        margin: 0px 10px;
+    }
+
+    .content-post{
+        width: 100%;
+    }
+
+    *{
+        font-size: 15px;
+    }
+    .box-interations span{
+        font-size: 15px;
+    }
+    .box-interations img{
+        margin-right: 3px;
+    }
+
+}
